@@ -1,0 +1,36 @@
+nature-aging-vocal-biomarkers/
+│
+├── data/                       # Pas besoin de __init__.py (pas de code Python)
+│   ├── raw/
+│   ├── processed/
+│   ├── classifications/
+│   ├── transcriptions/
+│   └── textgrids/
+│
+├── features/
+│   ├── acoustic.py
+│   ├── temporal.py
+│   ├── linguistic.py
+│   └── __init__.py             # <-- Fichier ci-dessus
+│
+├── models/
+│   ├── train_model.py
+│   ├── explain_model.py
+│   ├── stacking_model.py
+│   └── __init__.py             # <-- Fichier ci-dessus
+│
+├── scripts/
+│   ├── 1_transcribe_align.py
+│   ├── 2_extract_features.py
+│   ├── 3_prepare_classifications.py
+│   ├── 4_run_modeling.py
+│   └── __init__.py             # <-- Fichier ci-dessus
+│
+├── utils/
+│   ├── config.py
+│   ├── report_generator.py
+│   └── __init__.py             # <-- Fichier ci-dessus
+│
+├── requirements.txt
+├── run_full_pipeline.sh
+└── README.md
